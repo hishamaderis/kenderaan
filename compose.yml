@@ -1,0 +1,23 @@
+services:
+  web:
+    container_name: web
+    build:
+      context: . 
+      dockerfile: Dockerfile 
+    volumes:
+      - ./:/var/www/html 
+    ports:
+      - 8000:80 
+    depends_on:
+      - db
+  db:
+    image: mysql:8.0
+    environment:
+      MYSQL_ROOT_PASSWORD: 1 
+      MYSQL_DATABASE: kenderaanilp
+      MYSQL_USER: kenderaanilp
+      MYSQL_PASSWORD: 1 
+    ports:
+      - "3306:3306" 
+    volumes:
+      - ./:/tmp/kenderaan
