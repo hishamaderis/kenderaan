@@ -7,7 +7,7 @@ Sistem kenderaan ilpkls
 2. Masuk ke folder
 `cd kenderaan`
 3. Hidupkan container
-`docker compose up -d`
+`docker compose up -d --build`
 4. Import sql ke dalam database
 `docker compose exec db bash -c "mysql -u kenderaanilp -p kenderaanilp < /tmp/kenderaan/kenderaanilp.sql"`
 5. Layari http://localhost:8000 untuk melihat sistem
