@@ -17,7 +17,7 @@ services:
       MYSQL_DATABASE: kenderaanilp
       MYSQL_USER: kenderaanilp
       MYSQL_PASSWORD: 1 
-    ports:
-      - "3306:3306" 
+    expose:
+      - "3306" 
     volumes:
       - ./:/tmp/kenderaan
