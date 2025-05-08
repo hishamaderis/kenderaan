@@ -3,7 +3,7 @@ Sistem kenderaan ilpkls
 
 ## Cara penggunaan:
 1. Clone repository
-`git clone https://github.com/hishamaderis/kenderaan`    
+`git clone https://github.com/hishamaderis/kenderaan.git`    
 2. Masuk ke folder
 `cd kenderaan`
 3. Hidupkan container
